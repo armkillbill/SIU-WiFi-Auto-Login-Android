@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory android:title="@string/pref_category_account" >
+        <EditTextPreference
+            android:key="usernamePref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_username"
+            android:title="@string/pref_title_username" />
+        <EditTextPreference
+            android:inputType="textPassword"
+            android:key="passwordPref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_summary_password"
+            android:title="@string/pref_title_password" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_settings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enableAutoLoginPref"
+            android:title="@string/pref_title_enableAutoLogin" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="showNotificationPref"
+            android:summary="@string/pref_summary_showNotification"
+            android:title="@string/pref_title_showNotification" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="showOnGoingNotificationPref"
+            android:summary="@string/pref_summary_alwaysShowNotification"
+            android:title="@string/pref_title_alwaysShowNotification" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_about" >
+        <Preference
+            android:key="versionPref"
+            android:title="@string/pref_title_version" />
+        <Preference
+            android:key="developerPref"
+            android:summary="@string/developer_name"
+            android:title="@string/pref_title_developer" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
